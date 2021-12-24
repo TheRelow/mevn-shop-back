@@ -2,7 +2,6 @@ const router = require('express-promise-router')()
 const { checkJWTSign } = require('../middlewares/jwtCheck.middleware')
 const { product } = require('../controllers')
 
-
 // router.route('/:id').get(product.get)
 // router.route('/').post(product.create)
 // router.route('/').get(product.getAll)
