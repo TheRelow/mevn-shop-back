@@ -18,6 +18,10 @@ app.use(cors())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
+app.get('/', (req, res) => {
+  res.end(`api working on route /api/v1/`)
+})
+
 routes.forEach(item => {
   app.use(`/api/v1/${item}`, require(`./src/routes/${item}`))
 })
