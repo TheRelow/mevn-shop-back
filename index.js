@@ -27,6 +27,6 @@ routes.forEach(item => {
 })
 
 // Объявление роутов
-const PORT = 3100 || process.env.PORT
+const PORT = process.env.PORT || 3100
 http.createServer({}, app).listen(PORT)
 console.log(`Server running at ${PORT}`)
